@@ -1,0 +1,21 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  color: #FFFFFF;
+}
+input {
+  background-color: #AA99AA;
+}
+.wrapper {
+  display: flex;
+  flex-flow: column wrap;
+}
+.visualizer {
+  width: 100%;
+}
+.header{
+  width: 100%;
+  background-color: #924C5D;
+  padding: 10px;
+  justify-content: space-between;
+}

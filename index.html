@@ -1,0 +1,30 @@
+<!DOCTYPE html><html lang="en"><head>
+    <script src="p5.js"></script>
+    <script src="p5.sound.min.js"></script>
+    <script src="node.js"></script>
+    <script src="bst.js"></script>
+    <script src="rbt.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8">
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="header"><h1>Tree Visualizer</h1>
+      <input type="text" id="node" placeholder="# Node">
+        <input type="button" value="Add Node" onclick="insertNode(document.getElementById('node').value);">
+        <input type="radio" id="typeBST" name="type" value="BST" onchange="setType('BST');">
+        <label for="type">Binary Search Tree</label>
+        <input type="radio" id="typeRBT" name="type" value="RBT" onchange="setType('RBT');" checked="">
+        <label for="type">Red Black Tree</label>
+        <input type="button" value="Print" onclick="print();">
+        <input type="button" value="Clear" onclick="clearBST();">
+        <input type="button" value="Example" onclick="addExample();">
+      </div>
+      <div class="visualizer">
+        <script src="sketch.js"></script>
+      </div>
+    </div>
+  
+
+</body></html>
