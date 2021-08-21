@@ -3,7 +3,7 @@ let w, h;
 let margin, sizeNode, lenline;
 
 function setup() {
-  w = document.documentElement.clientWidth;
+  w = window.innerWidth;
   h = 1080;
   margin = 30;
   sizeNode = 50;
