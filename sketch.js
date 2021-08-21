@@ -25,7 +25,6 @@ function insertNode(val) {
 }
 
 function drawBST(root, x, y, width, level) {
-  resizeCanvas(w, Math.max(h, y+margin));
   if(root !== null) {
     h = Math.max(h,y+margin);
     if(bst instanceof RedBlackTree) {
