@@ -1,6 +1,6 @@
 let bst, type;
-let w, h;
 let margin, sizeNode, lenline;
+var w, h;
 
 function setup() {
   w = window.innerWidth;
@@ -59,9 +59,9 @@ function drawBST(root, x, y, width, level) {
 function setType(type) {
   this.type = type;
   if(!bst) return;
-  currentRoot = bst.root;
+  currentBst = bst;
   clearBST();
-  bst.root = currentRoot;
+  addExample();
 }
 
 function clearBST() {
