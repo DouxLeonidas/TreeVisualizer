@@ -24,6 +24,7 @@ function insertNode(val) {
 }
 
 function drawBST(root, x, y, width, level) {
+  h = max(y, h)
   if(root !== null) {
     if(bst instanceof RedBlackTree) {
       if(root.color === RED) {
