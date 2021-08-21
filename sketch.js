@@ -1,11 +1,10 @@
 let bst, type;
 let margin, sizeNode, lenline;
-var w, h, minh;
+var w, h;
 
 function setup() {
   w = window.innerWidth;
-  minh = 1080;
-  h = minh;
+  h = 1080;
   margin = 30;
   sizeNode = 50;
   lenline = 50;
@@ -70,7 +69,6 @@ function clearBST() {
     bst = new BinarySearchTree();
   else if(this.type === "RBT")
     bst = new RedBlackTree();
-  h = minh;
 }
 
 function addExample() {
