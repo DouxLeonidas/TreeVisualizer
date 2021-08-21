@@ -15,6 +15,7 @@ function setup() {
 }
 
 function draw() {
+  resizeCanvas(w,h);
   background(14,44,87);
   drawBST(bst.root, margin, margin, w-margin, 1);
 }
@@ -26,6 +27,7 @@ function insertNode(val) {
 function drawBST(root, x, y, width, level) {
   resizeCanvas(w, Math.max(h, y+margin));
   if(root !== null) {
+    h = Math.max(h,y+margin);
     if(bst instanceof RedBlackTree) {
       if(root.color === RED) {
          fill("#BB2723");
