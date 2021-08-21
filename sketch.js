@@ -21,11 +21,11 @@ function draw() {
 
 function insertNode(val) {
   bst.insert(val);
+  h += 10;
   resizeCanvas(w, h);
 }
 
 function drawBST(root, x, y, width, level) {
-  h = Math.max(y, h);
   if(root !== null) {
     if(bst instanceof RedBlackTree) {
       if(root.color === RED) {
