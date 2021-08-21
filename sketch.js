@@ -1,10 +1,11 @@
 let bst, type;
 let margin, sizeNode, lenline;
-var w, h;
+var w, h, minh;
 
 function setup() {
   w = window.innerWidth;
-  h = 1080;
+  minh = 1080;
+  h = minh;
   margin = 30;
   sizeNode = 50;
   lenline = 50;
@@ -26,7 +27,7 @@ function insertNode(val) {
 
 function drawBST(root, x, y, width, level) {
   if(root !== null) {
-    h = Math.max(h,y+margin);
+    h = Math.max(minh,y+margin);
     if(bst instanceof RedBlackTree) {
       if(root.color === RED) {
          fill("#BB2723");
