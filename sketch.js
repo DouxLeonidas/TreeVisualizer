@@ -27,7 +27,7 @@ function insertNode(val) {
 
 function drawBST(root, x, y, width, level) {
   if(root !== null) {
-    h = Math.max(minh,y+margin);
+    h = Math.max(h,y+margin);
     if(bst instanceof RedBlackTree) {
       if(root.color === RED) {
          fill("#BB2723");
@@ -70,6 +70,7 @@ function clearBST() {
     bst = new BinarySearchTree();
   else if(this.type === "RBT")
     bst = new RedBlackTree();
+  h = minh;
 }
 
 function addExample() {
