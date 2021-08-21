@@ -58,6 +58,7 @@ function drawBST(root, x, y, width, level) {
 
 function setType(type) {
   this.type = type;
+  if(!bst) return;
   currentRoot = bst.root;
   clearBST();
   bst.root = currentRoot;
